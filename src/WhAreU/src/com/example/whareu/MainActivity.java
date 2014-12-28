@@ -2,35 +2,29 @@ package com.example.whareu;
 
 import android.app.Activity;
 import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuItem;
+
+import com.jeremyfeinstein.slidingmenu.lib.SlidingMenu;
 
 
 public class MainActivity extends Activity {
+	
+	private SlidingMenu slidingmenu;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        
+        // roubo:add and set the SlidingMenu
+        slidingmenu = new SlidingMenu(this);
+        slidingmenu.setMode(SlidingMenu.LEFT);
+        slidingmenu.setShadowDrawable(R.drawable.topslidingmenu_shadow);
+        slidingmenu.setShadowWidthRes(R.dimen.topslidingmenu_shadow);
+        slidingmenu.setBehindOffset(R.dimen.topslidingmenu_offset);
+        slidingmenu.setBehindWidth(300);
+        slidingmenu.setTouchModeAbove(SlidingMenu.TOUCHMODE_FULLSCREEN);
+        slidingmenu.attachToActivity(this,SlidingMenu.SLIDING_CONTENT);
+        slidingmenu.setMenu(R.layout.slidingmenu);
     }
 
-
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.main, menu);
-        return true;
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
-        if (id == R.id.action_settings) {
-            return true;
-        }
-        return super.onOptionsItemSelected(item);
-    }
 }
