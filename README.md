@@ -16,5 +16,5 @@
 
 ## TODO
 
-        clean the repository because of disrepair
-        Top menu, add the SlidingMenu
+        * clean the repository because of disrepair
+        * top menu, add the "SlidingMenu"
