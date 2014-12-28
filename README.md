@@ -19,6 +19,8 @@
 
 ## TODO
 
-   * clean the repository because of disrepair √
-   * top menu, add the "SlidingMenu" √
-   * add the image show on SlidingMenu
+   * to clean the repository because of disrepair √
+   * to add the "SlidingMenu" as the top menu √
+   * to add the Baidu map SDK to project
+   * to get the location with Baidu map api
+   * to add the image show on SlidingMenu top
