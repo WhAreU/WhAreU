@@ -1,6 +1,6 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context="com.example.whareu.MainActivity" >
+    tools:context="com.yinkee.whareu.MainActivity" >
 
     <item
         android:id="@+id/action_settings"
