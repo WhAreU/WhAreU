@@ -1026,8 +1026,11 @@ containing a value of this type.
         public static final int abs__textfield_searchview_right_holo_dark=0x7f02006d;
         public static final int abs__textfield_searchview_right_holo_light=0x7f02006e;
         public static final int abs__toast_frame=0x7f02006f;
-        public static final int ic_launcher=0x7f020070;
-        public static final int topslidingmenu_shadow=0x7f020071;
+        public static final int contact=0x7f020070;
+        public static final int ic_launcher=0x7f020071;
+        public static final int map=0x7f020072;
+        public static final int message=0x7f020073;
+        public static final int topslidingmenu_shadow=0x7f020074;
     }
     public static final class id {
         public static final int abs__action_bar=0x7f040026;
@@ -1069,15 +1072,25 @@ containing a value of this type.
         public static final int abs__textButton=0x7f040019;
         public static final int abs__title=0x7f040021;
         public static final int abs__up=0x7f040011;
-        public static final int action_settings=0x7f04003c;
+        public static final int action_settings=0x7f040048;
         public static final int baidumapview=0x7f040038;
+        public static final int contactListView=0x7f04003a;
+        public static final int contact_image=0x7f040040;
+        public static final int contact_layout=0x7f04003f;
+        public static final int contact_text=0x7f040041;
         public static final int disableHome=0x7f04000f;
         public static final int edit_query=0x7f04002c;
         public static final int fullscreen=0x7f040003;
         public static final int homeAsUp=0x7f04000c;
         public static final int left=0x7f040000;
         public static final int listMode=0x7f040008;
+        public static final int map_image=0x7f040043;
+        public static final int map_layout=0x7f040042;
+        public static final int map_text=0x7f040044;
         public static final int margin=0x7f040002;
+        public static final int message_image=0x7f04003d;
+        public static final int message_layout=0x7f04003c;
+        public static final int message_text=0x7f04003e;
         public static final int none=0x7f040004;
         public static final int normal=0x7f040007;
         public static final int right=0x7f040001;
@@ -1085,10 +1098,12 @@ containing a value of this type.
         public static final int showCustom=0x7f04000e;
         public static final int showHome=0x7f04000b;
         public static final int showTitle=0x7f04000d;
-        public static final int slidingmenumain=0x7f04003b;
+        public static final int slidingmenumain=0x7f040047;
         public static final int tabMode=0x7f040009;
-        public static final int topListView=0x7f040039;
-        public static final int topslidingmenulayout=0x7f04003a;
+        public static final int textView1=0x7f040039;
+        public static final int topContent=0x7f04003b;
+        public static final int topListView=0x7f040046;
+        public static final int topslidingmenulayout=0x7f040045;
         public static final int useLogo=0x7f04000a;
         public static final int wrap_content=0x7f040006;
     }
@@ -1118,11 +1133,13 @@ containing a value of this type.
         public static final int abs__search_view=0x7f030013;
         public static final int abs__simple_dropdown_hint=0x7f030014;
         public static final int activity_baidu_map=0x7f030015;
-        public static final int activity_main=0x7f030016;
-        public static final int activity_sliding_menu=0x7f030017;
-        public static final int sherlock_spinner_dropdown_item=0x7f030018;
-        public static final int sherlock_spinner_item=0x7f030019;
-        public static final int slidingmenumain=0x7f03001a;
+        public static final int activity_contact_list=0x7f030016;
+        public static final int activity_main=0x7f030017;
+        public static final int activity_sliding_menu=0x7f030018;
+        public static final int activity_top_list=0x7f030019;
+        public static final int sherlock_spinner_dropdown_item=0x7f03001a;
+        public static final int sherlock_spinner_item=0x7f03001b;
+        public static final int slidingmenumain=0x7f03001c;
     }
     public static final class menu {
         public static final int main=0x7f0b0000;

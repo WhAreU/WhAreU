@@ -24,5 +24,6 @@
    * to add the Baidu map SDK to project √
    * to make the top activity as the list view √
    * to add a list item to entry the map and show the map √
+   * to use the Fragment to build the Tab framework as WeChat 6.0 √
    * to get the location with Baidu map api
    * to add the image show on SlidingMenu top
