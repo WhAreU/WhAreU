@@ -13,8 +13,12 @@
 ## Website
 
         隐客| www.yinkee.net
+        Track | http://www.yinkee.net/?p=416
+        Plan  | http://www.yinkee.net/?p=242
+
 
 ## TODO
 
    * clean the repository because of disrepair √
    * top menu, add the "SlidingMenu" √
+   * add the image show on SlidingMenu
