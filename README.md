@@ -1,18 +1,20 @@
-WhAreU
-======
+# WhAreU
 
-Where Are You ? My friends.
+        Where Are You ? My friends.
 
-介绍
-----
+## Introduction
 
-这将是一个有趣的聚会引导应用，每当我们和朋友聚会的时候，总是因为不知道每个人的出行情况而难以掌控时间和聚会的节奏，希望它诞生之后，能帮助我们。虽然在某些场合已经有类似的应用，但是我们在意的是一群朋友一起来开发它，并使用它。
+        It should be a mobile application, which makes us closer.
 
-贡献者名单
----------
+## Contributors
 
-官方博客
--------
-隐客 www.yinkee.net
+        roubo
 
+## Website
 
+        隐客| www.yinkee.net
+
+## TODO
+
+        clean the repository because of disrepair
+        Top menu, add the SlidingMenu
