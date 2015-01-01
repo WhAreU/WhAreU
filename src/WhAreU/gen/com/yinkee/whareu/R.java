@@ -1027,10 +1027,13 @@ containing a value of this type.
         public static final int abs__textfield_searchview_right_holo_light=0x7f02006e;
         public static final int abs__toast_frame=0x7f02006f;
         public static final int contact=0x7f020070;
-        public static final int ic_launcher=0x7f020071;
-        public static final int map=0x7f020072;
-        public static final int message=0x7f020073;
-        public static final int topslidingmenu_shadow=0x7f020074;
+        public static final int contact_selected=0x7f020071;
+        public static final int ic_launcher=0x7f020072;
+        public static final int map=0x7f020073;
+        public static final int map_selected=0x7f020074;
+        public static final int message=0x7f020075;
+        public static final int message_selected=0x7f020076;
+        public static final int topslidingmenu_shadow=0x7f020077;
     }
     public static final class id {
         public static final int abs__action_bar=0x7f040026;

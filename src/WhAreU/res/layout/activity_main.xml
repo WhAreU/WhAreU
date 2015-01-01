@@ -15,7 +15,7 @@
     
     <LinearLayout 
         android:layout_width="match_parent"
-        android:layout_height="40dp"
+        android:layout_height="60dp"
         android:baselineAligned="false"
         android:background="#ff999999">
         
@@ -36,6 +36,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
+                    android:layout_weight="2"
                     android:src="@drawable/message"/>
                 
                 <TextView 
@@ -43,6 +44,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
+                    android:textColor="#ffffffff"
+                    android:layout_weight="1"
                     android:text="会话"/>
                 
             </LinearLayout>
@@ -66,6 +69,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
+                    android:layout_weight="2"
                     android:src="@drawable/contact"/>
                 
                 <TextView 
@@ -73,6 +77,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
+                    android:textColor="#ffffffff"
+                    android:layout_weight="1"
                     android:text="联系人"/>
                 
             </LinearLayout>
@@ -96,6 +102,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
+                    android:layout_weight="2"
                     android:src="@drawable/map"/>
                 
                 <TextView 
@@ -103,6 +110,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
+                    android:textColor="#ffffffff"
+                    android:layout_weight="1"
                     android:text="地图"/>
                 
             </LinearLayout>

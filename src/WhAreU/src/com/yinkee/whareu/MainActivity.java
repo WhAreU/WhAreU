@@ -4,6 +4,8 @@ import android.app.Activity;
 import android.app.FragmentManager;
 import android.app.FragmentTransaction;
 import android.content.Intent;
+import android.content.res.ColorStateList;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -33,7 +35,7 @@ public class MainActivity extends Activity implements OnItemClickListener, OnCli
 	private ImageView mapImage;
 	// roubo: 3 text
 	private TextView topText;
-	private TextView contacText;
+	private TextView contactText;
 	private TextView mapText;
 	// roubo: 1 fragment manger
 	private FragmentManager fragmentManager;
@@ -47,7 +49,7 @@ public class MainActivity extends Activity implements OnItemClickListener, OnCli
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        initView();
+        initFragmentView();
         fragmentManager = getFragmentManager();
         setTabSelection(0);
 
@@ -84,10 +86,13 @@ public class MainActivity extends Activity implements OnItemClickListener, OnCli
 	
 	private void setTabSelection(int index) {
 
-		// roubo: clear event if the style is different 
+		clearSelection();
 		FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+		hideAllFragment(fragmentTransaction);
 		switch (index) {
 		case 0:
+			topImage.setImageResource(R.drawable.message_selected);
+			topText.setTextColor(Color.GREEN);
 			if(topFragment == null) {
 				topFragment = new TopFragment();
 				fragmentTransaction.add(R.id.topContent, topFragment);
@@ -96,6 +101,8 @@ public class MainActivity extends Activity implements OnItemClickListener, OnCli
 			}
 			break;
 		case 1:
+			contactImage.setImageResource(R.drawable.contact_selected);
+			contactText.setTextColor(Color.GREEN);
 			if(contactFragment == null) {
 				contactFragment = new ContactFragment();
 				fragmentTransaction.add(R.id.topContent, contactFragment);
@@ -104,6 +111,8 @@ public class MainActivity extends Activity implements OnItemClickListener, OnCli
 			}
 			break;
 		default:
+			mapImage.setImageResource(R.drawable.map_selected);
+			mapText.setTextColor(Color.GREEN);
 			if(mapFragment == null) {
 				mapFragment = new MapFragment();
 				fragmentTransaction.add(R.id.topContent, mapFragment);
@@ -117,7 +126,26 @@ public class MainActivity extends Activity implements OnItemClickListener, OnCli
 
 	}
 	
-	private void initView() { 
+	private void clearSelection() {
+		topImage.setImageResource(R.drawable.message);
+		topText.setTextColor(Color.parseColor("#ffffffff"));
+		contactImage.setImageResource(R.drawable.contact);
+		contactText.setTextColor(Color.parseColor("#ffffffff"));
+		mapImage.setImageResource(R.drawable.map);
+		mapText.setTextColor(Color.parseColor("#ffffffff"));
+	}
+	
+	
+	private void hideAllFragment(FragmentTransaction transaction) {
+		if(topFragment != null)
+			transaction.hide(topFragment);
+		if(contactFragment != null)
+			transaction.hide(contactFragment);
+		if(mapFragment != null)
+			transaction.hide(mapFragment);
+	}
+	
+	private void initFragmentView() { 
 		
 		topLayout = findViewById(R.id.message_layout);
 		contactLayout = findViewById(R.id.contact_layout);
@@ -128,7 +156,7 @@ public class MainActivity extends Activity implements OnItemClickListener, OnCli
 		mapImage = (ImageView) findViewById(R.id.map_image);
 		
 		topText = (TextView) findViewById(R.id.message_text);
-		contacText = (TextView) findViewById(R.id.contact_text);
+		contactText = (TextView) findViewById(R.id.contact_text);
 		mapText = (TextView) findViewById(R.id.map_text);
 		
 		topLayout.setOnClickListener(this);

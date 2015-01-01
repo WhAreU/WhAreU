@@ -258,10 +258,13 @@ int drawable abs__textfield_searchview_right_holo_dark 0x7f02006d
 int drawable abs__textfield_searchview_right_holo_light 0x7f02006e
 int drawable abs__toast_frame 0x7f02006f
 int drawable contact 0x7f020070
-int drawable ic_launcher 0x7f020071
-int drawable map 0x7f020072
-int drawable message 0x7f020073
-int drawable topslidingmenu_shadow 0x7f020074
+int drawable contact_selected 0x7f020071
+int drawable ic_launcher 0x7f020072
+int drawable map 0x7f020073
+int drawable map_selected 0x7f020074
+int drawable message 0x7f020075
+int drawable message_selected 0x7f020076
+int drawable topslidingmenu_shadow 0x7f020077
 int id abs__action_bar 0x7f040026
 int id abs__action_bar_container 0x7f040025
 int id abs__action_bar_subtitle 0x7f040017
